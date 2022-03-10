@@ -273,7 +273,7 @@ bool Adafruit_BusIO_Register::read(uint8_t *value) {
 
 /*!
  *    @brief  Pretty printer for this register
- *    @param  s The Stream to print to, defaults to &Serial
+ *    @param  s The Stream to print to, defaults to &Serial2
  */
 void Adafruit_BusIO_Register::print(Stream *s) {
   uint32_t val = read();
@@ -283,7 +283,7 @@ void Adafruit_BusIO_Register::print(Stream *s) {
 
 /*!
  *    @brief  Pretty printer for this register
- *    @param  s The Stream to print to, defaults to &Serial
+ *    @param  s The Stream to print to, defaults to &Serial2
  */
 void Adafruit_BusIO_Register::println(Stream *s) {
   print(s);

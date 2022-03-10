@@ -71,8 +71,8 @@ public:
   void setAddress(uint16_t address);
   void setAddressWidth(uint16_t address_width);
 
-  void print(Stream *s = &Serial);
-  void println(Stream *s = &Serial);
+  void print(Stream *s = &Serial2);
+  void println(Stream *s = &Serial2);
 
 private:
   Adafruit_I2CDevice *_i2cdevice;
